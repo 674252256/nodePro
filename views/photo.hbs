@@ -1,0 +1,13 @@
+{{> header}}
+
+<div class="row">
+
+  {{#each photoArray}}
+    <div class="col-xs-6 col-md-3">
+      <a href="/photos/{{this}}" class="thumbnail">
+        <img src="/photos/{{this}}" alt="...">
+      </a>
+    </div>
+  {{/each}}
+
+</div>

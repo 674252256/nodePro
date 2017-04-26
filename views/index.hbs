@@ -1,0 +1,16 @@
+{{!--引用header--}}
+{{> header}} 
+
+<div class="row">
+  {{#each albums}}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="/img/wjj.jpg" alt="...">
+        <div class="caption">
+          <h3>{{this.name}}</h3>
+          <p><a href="/album/{{this.name}}" class="btn btn-primary" role="button">查看</a></p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
